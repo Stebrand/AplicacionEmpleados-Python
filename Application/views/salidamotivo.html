@@ -1,0 +1,41 @@
+{% include'cabecera.html' %}
+<body>
+    <center>
+        <table cellspacing="100">
+            <tr>
+                <td>
+                    <h2>El empleado esta saliendo de las instalaciones antes de las 4 pm por favor diligeniciar el motivo</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Salida de Empleados</h2>
+                    <form action="/salidamotivo/motivo" method="post">
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Empleado">Documento</label>
+                                <input type="text" id="Documento_Empleado" name="Documento_Empleado">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Motivo_Salida">Motivo</label>
+                                <select name="Motivo_Salida" id="Motivo_Salida">
+                                    <option value="Cita_Medica">Cita Médica</option>
+                                    <option value="Calamidad">Calamidad</option>
+                                    <option value="Diligencia_Personal">Diligencia Personal</option>
+                                </select>
+                            </li>
+                        </ul>                         
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

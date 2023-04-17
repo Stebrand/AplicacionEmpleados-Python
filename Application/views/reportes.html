@@ -1,0 +1,76 @@
+{% include'cabecera.html' %}
+
+<body>
+
+    <div class="">
+        <form action="/reportes/consulta" method="post">
+                <li class="sinpunto">
+                    <label for="Visitante">Empleado/Proveedor o Invitado*</label>
+                    <select name="Visitante" id="Visitante" required>
+                        <option value=""></option>
+                        <option value="Empleado">Empleado</option>
+                        <option value="Visitante">Proveedor o Invitado</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li class="sinpunto">
+                    <label for="Documento">Documento</label>
+                    <input type="text" id="Documento" name="Documento">
+                </li>
+            </ul>
+            <ul>
+                <li class="sinpunto">
+                    <label for="Area_Empleado">Area</label>
+                    <select name="Area_Empleado" id="Area_Empleado">
+                        <option value=""></option>
+                        <option value="mercadeo">mercadeo</option>
+                        <option value="sistemas">sistemas</option>
+                        <option value="produccion">produccion</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <label for="Fecha_Inicio">Fecha Inicio (AAAA-MM-DD) </label>
+                    <input type="text" id="Fecha_Inicio" name="Fecha_Inicio" >
+                </li>
+            </ul>
+            <ul>
+                <li class="sinpunto">
+                    <label for="Fecha_Fin">Fecha Fin (AAAA-MM-DD)</label>
+                    <input type="text" id="Fecha_Fin" name="Fecha_Fin">
+                </li>
+            </ul>
+            <ul>            
+            <ul>
+                <li class="sinpunto">
+                    <button type="submit">Filtrar</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="">
+        <center>
+            <Table cellspacing="10">
+                {% for dato in datos %}
+                <tr>
+                    <td>{{dato[0]}}</td>
+                    <td>{{dato[1]}}</td>
+                    <td>{{dato[2]}}</td>
+                    <td>{{dato[3]}}</td>
+                    <td>{{dato[4]}}</td>
+                    <td>{{dato[5]}}</td>
+                    <td>{{dato[6]}}</td>
+                    <td>{{dato[7]}}</td>
+                    <td>{{dato[8]}}</td>
+                </tr>
+                {% endfor %}
+            </Table>
+        </center>
+    </div>
+
+</body>
+
+</html>

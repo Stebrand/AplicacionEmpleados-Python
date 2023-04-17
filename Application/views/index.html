@@ -1,0 +1,42 @@
+{% include'cabecera.html' %}
+<body>
+    <center>
+        <table cellspacing="100">
+            <tr>
+                <td>
+                    <h2>Ingreso de Empleados</h2>
+                    <form action="/inempleado" method="post">
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Empleado">Documento</label>
+                                <input type="text" id="Documento_Empleado" name="Documento_Empleado">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+                <td>
+                    <h2>Ingreso de Proveedor o Invitado</h2>
+                    <form action="/invisitante" method="post">
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Visitante">Documento</label>
+                                <input type="text" id="Documento_Visitante" name="Documento_Visitante">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

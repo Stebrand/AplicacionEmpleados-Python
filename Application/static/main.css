@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.titulo{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+       
+}
+nav ul li{
+    width: 100%;
+    margin: 0% 0%;
+     
+}
+.sinpunto{
+    list-style: none;
+    /* border: 1px solid red; */
+}
+.Formulario{
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+}
+

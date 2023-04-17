@@ -1,0 +1,75 @@
+{% include'cabecera.html' %}
+<body>
+    <center>
+        <table cellspacing="100">
+            <tr>
+                <td>
+                    <h2>Modificar Empleado </h2>
+                    <form  name="modempleado" action="/modificar/modempleado" method="post">
+                        <p>Ingrese el documento del empleado a modificar y actualice la informacion restante</p>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Empleado">Documento</label>
+                                <input type="text" id="Documento_Empleado" name="Documento_Empleado" required>
+                            </li>
+                        </ul>                        
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Nombre_Empleado">Nombre</label>
+                                <input type="text" id="Nombre_Empleado" name="Nombre_Empleado">                                
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Area_Empleado">Area</label>
+                                <select name="Area_Empleado" id="Area_Empleado">
+                                    <option value="mercadeo">mercadeo</option>
+                                    <option value="sistemas">sistemas</option>
+                                    <option value="produccion">produccion</option>
+                                </select>
+                            </li>
+                        </ul>                        
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+                <td>
+                    <h2>Modificar Proveedor o Invitado Nuevo</h2>
+                    <form name="modvisitante"action="/modificar/modvisitante" method="post">
+                        <p>Ingrese el documento del proveedor o invitado a modificar y actualice la informacion restante</p>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Proveedor">Documento</label>
+                                <input type="text" id="Documento_Visitante" name="Documento_Visitante" required>                                                                
+                            </li>
+                        </ul>                        
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Nombre_Visitante">Nombre</label>
+                                <input type="text" id="Nombre_Visitante" name="Nombre_Visitante">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Tipo_Visitante">Tipo</label>
+                                <select name="Tipo_Visitante" id="Tipo_Visitante">
+                                    <option value="proveedor">Proveedor</option>
+                                    <option value="invitado">Invitado</option>
+                                </select>
+                            </li>
+                        </ul>                        
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

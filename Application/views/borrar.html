@@ -1,0 +1,46 @@
+{% include'cabecera.html' %}
+
+<body>
+    <center>
+        <table cellspacing="100">
+            <tr>
+                <td>
+                    <h2>Borrar Empleado </h2>
+                    <form name="boempleado" action="/borrar/boempleado" method="post">
+                        <p>Ingrese el documento del empleado a borrar</p>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Empleado">Documento</label>
+                                <input type="text" id="Documento_Empleado" name="Documento_Empleado" required>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+                <td>
+                    <h2>Borrar Proveedor o Invitado Nuevo</h2>
+                    <form name="bovisitante" action="/borrar/bovisitante" method="post">
+                        <p>Ingrese el documento del proveedor o invitado a borrar</p>
+                        <ul>
+                            <li class="sinpunto">
+                                <label for="Documento_Visitante">Documento</label>
+                                <input type="text" id="Documento_Visitante" name="Documento_Visitante" required>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="sinpunto">
+                                <button type="submit">Enter</button>
+                            </li>
+                        </ul>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
